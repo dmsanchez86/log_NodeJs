@@ -1,0 +1,10 @@
+var http = require('http')              ;
+var respuesta = "No tengo una respuesta";
+
+http.createServer(function(req,res){
+    res.writeHead(200,{'Content-Type':'text/plain'});
+    res.end('Hello World #DanielMSanchez <a href="http://github.com/dmsanchez86">http://github.com/dmsanchez86</a>');
+}).listen(3000,'127.0.0.1');
+
+console.log('Mi Respuesta es: ');
+console.log(respuesta);

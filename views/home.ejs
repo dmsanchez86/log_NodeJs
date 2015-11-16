@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="system">
+	<head>
+		<meta charset="UTF-8">
+		<title><%= title_page %></title>
+
+		<!-- Style Sheets -->
+		<link rel="stylesheet" href="public/css/main.css">
+		
+		<!-- Angular and Libraries JAvaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+		<script type="text/javascript" src="public/js/actions.js" ></script>
+	</head>
+	<body ng-controller="bodyController">
+		<div ng-view></div>
+    	<a href="/register">Registrarse</a>
+		
+		<!-- Script -->
+		<script type="text/javascript" src="public/js/controllers/main.js" ></script>
+	</body>
+</html>
