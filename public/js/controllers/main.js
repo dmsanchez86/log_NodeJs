@@ -5,3 +5,8 @@ var app = angular.module('system', []);
 app.controller('bodyController', ['$scope', function($scope) {
 	
 }]);
+
+// Main Controller
+app.controller('homeController', ['$scope', function($scope) {
+	alert();
+}]);

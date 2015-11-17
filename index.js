@@ -5,24 +5,22 @@ var ejs = require('ejs');
 var respuesta = http;
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://admin:zopp@ds031792.mongolab.com:31792/example');
+// mongoose.connect('mongodb://admin:zopp@ds031792.mongolab.com:31792/example');
 
-var db = mongoose.connection;
+/* var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function (callback) {
   console.log(callback);
-}); 
+}); */
 
-console.log(__dirname);
-
-var Cat = mongoose.model('Cat', { name: String });
+/*var Cat = mongoose.model('Cat', { name: String });
 
 var kitty = new Cat({ name: 'Gildegar' });
 
 kitty.save(function (err) {
   if (err) // ...
   console.log('meow');
-});
+});*/
 
 /*var Kitten = mongoose.model('Cat', kitty);
 
