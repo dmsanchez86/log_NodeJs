@@ -1,3 +1,3 @@
-window.onload = function(){
+$().ready(function(){
 	console.log("Page Ready!");	
-}
+});

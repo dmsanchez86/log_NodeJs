@@ -2,9 +2,9 @@ var http = require('http');
 var express = require('express');
 var server = express();
 var ejs = require('ejs');
-var respuesta = http;
+//var respuesta = http;
 
-var mongoose = require('mongoose');
+//var mongoose = require('mongoose');
 // mongoose.connect('mongodb://admin:zopp@ds031792.mongolab.com:31792/example');
 
 /* var db = mongoose.connection;
@@ -29,9 +29,9 @@ Kitten.find(function (err, kittens) {
   console.log(kittens);
 });*/
 
-var port = 3002;
+var port = 3000;
 
-server.use('/public',express.static('public'));
+server.use('/public', express.static('public'));
 
 server.set('view engine','ejs');
 
@@ -45,7 +45,7 @@ server
 
 .get('/register',function(req,res){
      res.render('register',{
-      title_page: 'Registro A'
+      title_page: 'Registro System'
     });
 });
 
