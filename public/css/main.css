@@ -6,15 +6,10 @@
 body, html {
   display: block;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  font-size: 100%; }
 
-body.login {
-  background-image: -webkit-radial-gradient(center, #111111, #323232);
-  background-image: -khtml-radial-gradient(center, #111111, #323232);
-  background-image: -moz-radial-gradient(center, #111111, #323232);
-  background-image: -ms-radial-gradient(center, #111111, #323232);
-  background-image: -o-radial-gradient(center, #111111, #323232);
-  background-image: radial-gradient(center, #111111, #323232);
+body.login, body.register {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -30,6 +25,20 @@ body.login {
   -ms-align-items: center;
   -o-align-items: center;
   align-items: center; }
+body.login {
+  background-image: -webkit-radial-gradient(center, #111111, #323232);
+  background-image: -khtml-radial-gradient(center, #111111, #323232);
+  background-image: -moz-radial-gradient(center, #111111, #323232);
+  background-image: -ms-radial-gradient(center, #111111, #323232);
+  background-image: -o-radial-gradient(center, #111111, #323232);
+  background-image: radial-gradient(center, #111111, #323232); }
+body.register {
+  background-image: -webkit-radial-gradient(center, #323232, #111111);
+  background-image: -khtml-radial-gradient(center, #323232, #111111);
+  background-image: -moz-radial-gradient(center, #323232, #111111);
+  background-image: -ms-radial-gradient(center, #323232, #111111);
+  background-image: -o-radial-gradient(center, #323232, #111111);
+  background-image: radial-gradient(center, #323232, #111111); }
 
 .content_login {
   border: thin dotted white; }

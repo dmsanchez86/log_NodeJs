@@ -7,7 +7,7 @@ app.controller('LoginController', ['$scope', function($scope) {
 	
 }]);
 
-// Main Controller
+// Register Controller
 app.controller('RegisterController', ['$scope', function($scope) {
 	
 }]);

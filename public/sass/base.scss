@@ -8,15 +8,24 @@ body,html{
 	display: block;
 	height: 100%;
 	width: 100%;
+	font-size: 100%;
 }
 
 body{
 
-	&.login{
-		@include gradient(radial, (center, #111, #323232));
+	&.login,
+	&.register{
 		@include flex(flex);
 		@include justify-content(center);
 		@include align-items(center);
+	}
+
+	&.login{
+		@include gradient(radial, (center, #111, #323232));
+	}
+
+	&.register{
+		@include gradient(radial, (center, #323232, #111));
 	}
 }
 
