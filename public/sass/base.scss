@@ -1,0 +1,28 @@
+@import "variables";
+@import "fonts";
+@import "functions";
+
+*{ @include reset; }
+
+body,html{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+body{
+
+	&.login{
+		@include gradient(radial, (center, #111, #323232));
+		@include flex(flex);
+		@include justify-content(center);
+		@include align-items(center);
+	}
+}
+
+.content_login{
+	border: thin dotted white;
+}
+
+@import "queries";
+@import "keyframes";

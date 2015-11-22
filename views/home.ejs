@@ -13,10 +13,13 @@
 		<script type="text/javascript" src="public/js/materialize.min.js" ></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 	</head>
-	<body>
-    	<a href="/register" class="waves-effect waves-teal btn-flat">Registrarse</a>
+	<body class="login">
+		<div class="content_login">
+			<div ng-include="'public/includes/login.html'" ng-controller="LoginController"></div>
+    		<a href="/register" class="waves-effect waves-teal btn-flat">Registrarse</a>
+		</div>
 		
-		<!-- Script -->
+		<!-- Scripts -->
 		<script type="text/javascript" src="public/js/actions.js" ></script>
 		<script type="text/javascript" src="public/js/controllers/main.js" ></script>
 	</body>
